@@ -1,3 +1,4 @@
+#스택을 이용해 괄호를 검사하는 문제입니다.
 class Stack:
     def __init__(self):
         self.data=[]
