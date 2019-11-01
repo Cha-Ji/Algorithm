@@ -1,37 +1,28 @@
 #Ex_10845
 #큐
 #시간 초과
-#pop(0)은 밀어내기 때문에 연산이 느리다.
-#rear없이 front만 있으면 비효율적이다.
-#import sys를 사용하자
+#sys.stdin.readline!!!!!!!!
 import sys
 class queue:
     def __init__(self):
         self.data=[]
-        self.head=-1
-        self.count=0
-        self.rear=-1
     def size(self):
-        return self.count
+        return len(self.data)
     def empty(self):
-        if(self.count==0):return 1
+        if(len(self.data)==0):return 1
         else:return 0
     def push(self, x):
-        self.count+=1
-        self.rear+=1
         self.data.append(x)
     def pop(self):
-        if self.empty(): return -1
+        if len(self.data)==0: return -1
         else :
-            self.head+=1
-            self.count-=1
-            return self.data[self.head]
+            return self.data.pop(0)
     def front(self):
-        if self.empty(): return -1
-        else: return self.data[self.head+1]
+        if len(self.data)==0: return -1
+        else: return self.data[0]
     def back(self):
-        if self.empty(): return -1
-        else: return self.data[self.rear]
+        if len(self.data)==0: return -1
+        else: return self.data[-1]
 T=int(sys.stdin.readline())
 
 Q=queue()
@@ -40,13 +31,17 @@ for i in range(T):
     if(fn[0]=='push'):
         Q.push(fn[1])
     elif(fn[0]=='front'):
-        print(Q.front())
+        sys.stdout.write(str(Q.front()))
+        sys.stdout.write('\n')
     elif(fn[0]=='back'):
-        print(Q.back())
+        sys.stdout.write(str(Q.back()))
+        sys.stdout.write('\n')
     elif(fn[0]=='pop'):
-        print(Q.pop())
+        sys.stdout.write(str(Q.pop()))
+        sys.stdout.write('\n')
     elif(fn[0]=='size'):
-        print(Q.size())
+        sys.stdout.write(str(Q.size()))
+        sys.stdout.write('\n')
     elif(fn[0]=='empty'):
-        print(Q.empty())
-    else:print()
+        sys.stdout.write(str(Q.empty()))
+        sys.stdout.write('\n')
