@@ -1,7 +1,5 @@
 #Ex_11279
-# MAX_HEAP
-#배열, 자연수 x 삽입
-#pop heap[0]
+# HEAP_sort
 
 import sys
 def insert_Heap(heap,item):
