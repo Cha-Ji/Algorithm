@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5376d688-e306-4fcd-a4c9-41933f2b30c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5376d688-e306-4fcd-a4c9-41933f2b30c3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="깃 연동" />
     <MESSAGE value="Ex_11279 [heap]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ex_11279 [heap]" />
+    <MESSAGE value="Ex_1927 [heap]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ex_1927 [heap]" />
   </component>
 </project>
