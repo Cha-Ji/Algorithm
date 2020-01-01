@@ -1,37 +1,29 @@
 #Ex_1655
 # priority Queue
-# import heapq
-# heap_Sort
-def even_Heap(heap):
-    pre=(len(heap)-1)//2
-    if len(heap)==1:
-        return heap[pre]
-    if heap[pre]>heap[pre+1]:
-        return heap[pre+1]
-    else:return heap[pre]
-
-def insert_Heap(heap,item):
-    heapq.heappush(heap,item)
-    heaped=[]
-    i=len(heap)
-    for _ in range(i):
-        if len(heap)==1:
-            heaped.append(heap.pop())
-        else:
-            heaped.append(heap[0])
-            heapq.heappop(heap)
-    return heaped
-
+# Sort
 import sys
-import heapq
-
 i =False
-heap=[]
-
+sorted_list=[0]*20001
+total_count=0
 for _ in range(int(sys.stdin.readline())):
+    odd_list=[20001,20001]
     i=not i
-    input_num = int(sys.stdin.readline())
-    heap=insert_Heap(heap,input_num)
-    if i:
-        sys.stdout.write(str(heap[(len(heap)//2)])+"\n")
-    else:sys.stdout.write(str(even_Heap(heap))+"\n")
+    x=int(sys.stdin.readline())
+    sorted_list[x+10000]+=1
+    total_count+=1
+    j,count,target=0,0,0
+    #odd
+    while count<(total_count//2)+1:
+        if sorted_list[j]>0:
+            if i==False:
+                odd_list.pop(0)
+                odd_list.append(j)
+            count+=sorted_list[j]
+        j+=1
+
+    if (total_count//2)+1==count and i==False:
+        target=odd_list[0 + (odd_list[0]>odd_list[1])]
+    else: target=j-1
+    print(target-10000)
+
+
