@@ -1,20 +1,22 @@
 #Ex_1655
 # priority Queue
-# import heapq
-# heap_Sort
+# import heapq, tuple
 import sys
 import heapq
-i =False
-heap=[]
+minH,maxH=[],[]
 for _ in range(int(sys.stdin.readline())):
-    i=not i
-    heapq.heappush(heap,int(sys.stdin.readline()))
-    heaped=[]
-    for _ in range(len(heap)//2+1):
-        heaped.append(heapq.heappop(heap))
-    heap=heaped+heap
-    print(heaped[-1] if (i or len(heaped)==1)
-          else heaped[-2+ (heaped[-2] > heaped[-1])])
-    print(heap)#tb
-    print(heaped)#tb
+    m=int(sys.stdin.readline())
+    if len(minH)==len(maxH):
+        heapq.heappush(maxH,(-m,m))
+        #heappush = minHeap
+    else:
+        heapq.heappush(minH,m)
+    if (len(minH)and len(maxH))and maxH[0][1] > minH[0]:
+        a=heapq.heappop(maxH)[1]
+        b=heapq.heappop(minH)
+        heapq.heappush(minH,a)
+        heapq.heappush(maxH,(-b,b))
+    print(maxH[0][1])
+
+
 
