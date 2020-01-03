@@ -25,7 +25,5 @@ def dfs(graph_list, start, parent):
             graph_list[i].remove(node)
     return parent
 
-# for in list  ?
-# list( ) [2:]:  ??
 for i in list(dfs(node_graph, 1, parent))[2:]:
     print(i[0])
