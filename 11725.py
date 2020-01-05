@@ -12,18 +12,22 @@ for _ in range(node - 1):
     node_graph[i].append(j)
     node_graph[j].append(i)
 
-#DFS나 BFS나 무관
-
-def dfs(graph_list, start, parent):
+#DFS
+def dfs(graph,start,parent_list):
     stack = [start]
 
     while stack:
         node = stack.pop()
-        for i in graph_list[node]:
-            parent[i].append(node)
-            stack.append(i)
-            graph_list[i].remove(node)
-    return parent
+        for i in graph[node]:
+            parent_list[i].append(node) # visited_list
+            stack.append(i)             # next parent node
+            graph[i].remove(node)       # visited.remove
+    return parent_list
 
+# dfs[1] : root's parent
+# dfs[2] start!
 for i in list(dfs(node_graph, 1, parent))[2:]:
     print(i[0])
+
+
+
