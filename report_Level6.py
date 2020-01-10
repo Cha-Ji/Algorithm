@@ -2,7 +2,7 @@
 # print("3의 배수 판별기")
 # num = int(input("판별할 숫자 : "))
 # print("3의 배수입니다!"if num%3==0 else "3의 배수가 아닙니다!")
-
+#
 # # ex_2
 # print("범위에 있는지 판별하기")
 # num = int(input("판별할 숫자 : "))
@@ -10,14 +10,14 @@
 #     print("범위 안에 있습니다!")
 # else:
 #     print("범위 밖에 있습니다!")
-
+#
 # # password
 # print("로그인하기")
 # password = 0000
 # if int(input("비밀번호 : ")) ==password:
 #     print("로그인 성공!")
 # else:print("로그인 실패!")
-
+#
 # # 주민번호로 성별 판별하기
 # print("성별 판별하기!")
 # num = int(input("주민번호 뒷자리 : "))
@@ -26,12 +26,12 @@
 #     if num[0]%2==1:
 #         print("남성입니다.")
 #     else:print("여성입니다.")
-
+#
 # # 안경 추천하기
 # print("안경 추천하기")
 # vision = float(input("시력 : "))
 # print("착용을 권합니다."if vision<=0.7 else "건강합니다!")
-
+#
 # # 레벨 부여하기
 # print("레벨 부여하기")
 # post_count = int(input("글쓰기 갯수 : "))
@@ -88,3 +88,8 @@
 # elif total < 30000:
 #     total += 5000
 # print("총 금액은 "+str(total)+"원 입니다.")
+
+import collections
+cont = collections.Counter(['aa','bb','cc','aa'])
+cont.update('aabcd')
+print(cont)
