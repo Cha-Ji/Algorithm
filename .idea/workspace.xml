@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5376d688-e306-4fcd-a4c9-41933f2b30c3" name="Default Changelist" comment="Ex_1927 [heap]">
-      <change afterPath="$PROJECT_DIR$/5543.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clear/14681.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5376d688-e306-4fcd-a4c9-41933f2b30c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/5543.py" beforeDir="false" afterPath="$PROJECT_DIR$/5543.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +131,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5543.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clear/5543.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,6 +191,7 @@
     <MESSAGE value="깃 연동" />
     <MESSAGE value="Ex_11279 [heap]" />
     <MESSAGE value="Ex_1927 [heap]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ex_1927 [heap]" />
+    <MESSAGE value="Ex_14681[if]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ex_14681[if]" />
   </component>
 </project>
