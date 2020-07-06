@@ -1,5 +1,5 @@
 #Ex_2446
-# for 별찍기
+# for 별찍기 9
 N = int(input())
 
 for i in range(N,0,-1):
