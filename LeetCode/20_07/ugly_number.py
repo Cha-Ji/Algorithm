@@ -6,12 +6,13 @@ class Solution:
             return c if a >= c else a
     def nthUglyNumber(self, n: int) -> int:
 
+
         uglyList = [1]*(1700)
         i = 1
         count2 = 0; count3 = 0; count5 = 0
 
         #create ugly list
-        while i < 1700:
+        while i < n:
             next = min(uglyList[count2] * 2, uglyList[count3] * 3, uglyList[count5] * 5)
             uglyList[i] = next
             print(uglyList[i])
