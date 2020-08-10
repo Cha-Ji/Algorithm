@@ -13,7 +13,7 @@ class Solution:
         s = s.upper()
         for i in s:
             if self.checkAscii(self.i):
-                s = s.replace(i,"").strip()
+                s = s.replace(i, "").strip()
         return s == s[::-1]
 print(Solution.isPalindrome(Solution,"A man, a plan, a canal: Panama"))
 
