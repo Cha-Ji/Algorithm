@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5376d688-e306-4fcd-a4c9-41933f2b30c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/20_08_1/Vertical Order Traversal of a Binary Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/20_08_2/PathSum3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/20_08_3/BestTimeToSellStock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/20_08_3/Non_overlapping_Intervals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/20_09_1/Repeated Substring Pattern.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/20_08_1/Vertical Order Traversal of a Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/20_08_1/Vertical Order Traversal of a Binary Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/20_08_3/BestTimeToSellStock.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/20_08_3/BestTimeToSellStock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +61,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PathSum3">
-    <configuration name="Add_an_Search_Word_Data_structure_design" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Repeated Substring Pattern">
+    <configuration name="Contains Duplicate III" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,11 +70,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_08_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_08_1/Add_an_Search_Word_Data_structure_design.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_1/Contains Duplicate III.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="BestTimeToSellStock" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Goat Latin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_08_3/BestTimeToSellStock.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_08_3/Goat Latin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Find_All_Duplicates_in_an_Array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Largest Time for Given Digits" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,11 +112,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_08_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_08_1/Find_All_Duplicates_in_an_Array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_1/Largest Time for Given Digits.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PathSum3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Repeated Substring Pattern" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,11 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_08_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_08_2/PathSum3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_1/Repeated Substring Pattern.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Vertical Order Traversal of a Binary Tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,11 +154,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_08_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_08_1/Vertical Order Traversal of a Binary Tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.PathSum3" />
-        <item itemvalue="Python.BestTimeToSellStock" />
-        <item itemvalue="Python.Vertical Order Traversal of a Binary Tree" />
-        <item itemvalue="Python.Add_an_Search_Word_Data_structure_design" />
-        <item itemvalue="Python.Find_All_Duplicates_in_an_Array" />
+        <item itemvalue="Python.Repeated Substring Pattern" />
+        <item itemvalue="Python.Contains Duplicate III" />
+        <item itemvalue="Python.Largest Time for Given Digits" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Goat Latin" />
       </list>
     </recent_temporary>
   </component>
