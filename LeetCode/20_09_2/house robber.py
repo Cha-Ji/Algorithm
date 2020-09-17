@@ -1,4 +1,4 @@
-# dp 해볼것
+# dp 해볼
 class Solution:
     def dfs(self, i, nums) -> int:
         if i >= len(nums):return 0
