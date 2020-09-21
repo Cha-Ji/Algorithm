@@ -27,7 +27,7 @@ class Solution:
             dfs(x - 1, y)
             dfs(x, y - 1)
             grid[x][y] = temp
-            
+
         # main()
         for i in range(self.xlen):
             for j in range(self.ylen):
