@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5376d688-e306-4fcd-a4c9-41933f2b30c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LeetCode/20_09_4/Teemo Attacking.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
@@ -58,8 +59,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Robot Bounded In Circle">
-    <configuration name="1946" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Teemo Attacking">
+    <configuration name="Find the Difference" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,11 +68,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1946.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_4/Find the Difference.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -80,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Compare Version Numbers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Gas Station" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,11 +89,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_2/Compare Version Numbers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_4/Gas Station.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Maximum XOR of Two Numbers in an Array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Largest Number" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,11 +110,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_3/Maximum XOR of Two Numbers in an Array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_4/Largest Number.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Robot Bounded In Circle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Majority Element II" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,11 +131,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_3/Robot Bounded In Circle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_4/Majority Element II.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="house robber" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Teemo Attacking" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/20_09_4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_2/house robber.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/20_09_4/Teemo Attacking.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Robot Bounded In Circle" />
-        <item itemvalue="Python.Maximum XOR of Two Numbers in an Array" />
-        <item itemvalue="Python.house robber" />
-        <item itemvalue="Python.1946" />
-        <item itemvalue="Python.Compare Version Numbers" />
+        <item itemvalue="Python.Teemo Attacking" />
+        <item itemvalue="Python.Largest Number" />
+        <item itemvalue="Python.Find the Difference" />
+        <item itemvalue="Python.Gas Station" />
+        <item itemvalue="Python.Majority Element II" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +201,7 @@
     <MESSAGE value="EX_2446[for 별찍기 9]" />
     <MESSAGE value="EX_10996[for 별찍기 21]" />
     <MESSAGE value="LeetCode:   All Elements in Two Binary Search Trees" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode:   All Elements in Two Binary Search Trees" />
+    <MESSAGE value="LeetCode: Robot Bounded in Circle [ez]" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode: Robot Bounded in Circle [ez]" />
   </component>
 </project>
