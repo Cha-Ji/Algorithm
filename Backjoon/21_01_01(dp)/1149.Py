@@ -3,38 +3,23 @@
 #집의 수 2 ~ 1000
 N = int(input())
 
-#각 집을 색칠하는 R, B, G 비용
+#각 집을 색칠하는 R, B, G 비용 입력
 RBG_cost = [[0,0,0]] * (N+1)
 for i in range(N):
     RBG_cost[i] = list(map(int, input().split()))
 
-#보텀업 디피를 사용한다. 두 경우를 비교하여 최솟값을 유지시킨다.
-d = [1001] * N
-min_cost = 1001 * N
+#보텀업 디피를 사용한다.
+# 각 단계마다 마지막에 같은 색 끼리 칠한 경우를 비교해서 경우의 수를 줄인다.
+# d[집][색]
+d = [[0, 0, 0]] * N
+d[0] = [RBG_cost[0][0], RBG_cost[0][1], RBG_cost[0][2]]
 
-#마지막에 칠한 색을 기억하자.
-end = 0
+for i in range(1, N):
+    d[i] = [
+        min(d[i-1][1] + RBG_cost[i][0], d[i-1][2] + RBG_cost[i][0]),
+        min(d[i-1][0] + RBG_cost[i][1], d[i-1][2] + RBG_cost[i][1]),
+        min(d[i-1][0] + RBG_cost[i][2], d[i-1][1] + RBG_cost[i][2])
+    ]
 
-for j in range(3):
+print(min(d[N-1]))
 
-    d[0] = RBG_cost[0][j]
-    end = j
-    for i in range(1, N):
-
-        end1 = (end + 1) % 3
-        end2 = (end + 2) % 3
-
-        cost1 = RBG_cost[i][end1] + d[i-1]
-        cost2 = RBG_cost[i][end2] + d[i-1]
-
-        if cost1 < cost2:
-            end = end1
-            d[i] = cost1
-
-        else:
-            end = end2
-            d[i] = cost2
-
-    print(d[N-1])
-    min_cost = min(d[N-1], min_cost)
-print(min_cost)
