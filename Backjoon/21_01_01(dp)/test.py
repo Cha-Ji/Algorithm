@@ -1,4 +1,1 @@
-a = 'ABCD'
-
-for b, i in enumerate(a):
-    print(b,i)
+print(max(1,2))
