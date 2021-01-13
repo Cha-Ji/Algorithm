@@ -17,6 +17,3 @@ if(max(d) == 0):
     print(max(num_list))
 else:
     print(max(d))
-
-
-
