@@ -7,7 +7,6 @@ P = int(input())
 
 # g[walk]칸으로 가시오.
 g = [-1] * (G+1)
-ans = 0
 
 for i in range(P):
     walk = int(sys.stdin.readline())
@@ -28,12 +27,9 @@ for i in range(P):
 
         # 도킹 실패?
         if thisWalk == 0:
-            ans = i
+            i -= 1
             for _ in range(P-i-1):
                 sys.stdin.readline()
             break
 
-if ans == 0:
-    print(i+1)
-else:
-    print(i)
+print(i + 1)
