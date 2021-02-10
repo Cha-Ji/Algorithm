@@ -3,7 +3,6 @@
 # 2. 그룹 전체 탭
 
 # Ex_2879 코딩은 예쁘게 [골드1]
-import heapq
 N = int(input())
 thisTab = list(map(int, input().split()))
 correctTab = list(map(int, input().split()))
