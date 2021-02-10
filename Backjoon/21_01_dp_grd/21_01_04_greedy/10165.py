@@ -1,21 +1,31 @@
-# Ex_10165 버스 노선 [플1]
+# Ex_10165 버스 노선 [플5]
 import sys
+
 N = int(input())
 M = int(input())
 
-dp = [[0, -1]for _ in range(N)]
-for i in range(M):
-    a, b = map(int, sys.stdin.readline())
+rail = [0] * M
+recursionEnd = 0
+for num in range(M):
+    start, end = map(int, sys.stdin.readline().split())
 
-    index = min(a, b)
-    value = max(a, b)
+    if start > end:
+        recursionEnd = max(recursionEnd, end)
+        end += N
+    rail[num] = [start, end, num + 1]
 
-    if dp[index][0] > 0:
-        # 겹치는 것 제거
-        True
+# 출발이 빠른 순으로 검사
+rail.sort(key=lambda x: (x[0], -x[1]))
 
+# 도착이 이른 노선은 배제
+end = recursionEnd
+ans = []
+for s, e, num in rail:
+    if end < e:
+        end = e
+        ans.append(num)
+ans.sort()
 
-# 포함 제거
-for i in range(M):
-    for j in range(i, dp[i]):
-        dp[i]
+for i in ans:
+    print(i, end=" ")
+print()
