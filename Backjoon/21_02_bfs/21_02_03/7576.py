@@ -11,7 +11,7 @@ def bfs():
         for dx, dy in (-1, 0), (1, 0), (0, -1), (0, 1):
             nx = dx + x
             ny = dy + y
-            print(ny)
+
             if 0 <= nx < N and 0 <= ny < M:
                 if box[nx][ny] == 0:
                     dq.append([nx, ny, day + 1])
