@@ -1,16 +1,16 @@
-# 신입사원
-
+# Ex_1946 신입사원 [실1]
+import sys
+input = sys.stdin.readline
 for _ in range(int(input())):   # testCase
     # input
-    score_rank = []
-    for __ in range(int(input())):
-        score_rank.append(list(map(int, input().split())))
-    score_rank.sort()
+    N = int(input())
+    scoreRank = [list(map(int, input().split())) for _ in range(N)]
+    scoreRank.sort()
 
-    stupid = score_rank[0]
-    result = 1
-    for i in score_rank:
-        result += stupid[1] > i[1]
-        stupid = [i[0], min(stupid[1], i[1])]
-    print(result)
-
+    end = scoreRank[0][1]
+    ans = 1
+    for i in scoreRank:
+        if i[1] < end:
+            ans += 1
+            end = i[1]
+    print(ans)
