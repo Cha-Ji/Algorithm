@@ -4,14 +4,13 @@ input = sys.stdin.readline
 
 
 class Node():
-    def __init__(self, key):
-        self.key = key
-        self.child = [-1] * 11
+    def __init__(self):
+        self.child = [-1] * 10
 
 
 class Trie():
     def __init__(self):
-        self.head = Node(None)
+        self.head = Node()
 
     def insert(self, phoneNum):
         cur = self.head
@@ -19,7 +18,7 @@ class Trie():
         for num in phoneNum:
             num = int(num)
             if cur.child[num] == -1:
-                cur.child[num] = Node(num)
+                cur.child[num] = Node()
             cur = cur.child[num]
 
         # 끝맺음
