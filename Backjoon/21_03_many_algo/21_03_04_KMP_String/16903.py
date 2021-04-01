@@ -36,14 +36,13 @@ def xor():
     cur = A
     for b in binX:
         b = int(b)
-        if cur[1 - b]:
-            # b ^ cur == 1이 존재
+        if cur[b ^ 1]:
             ans += '1'
-            cur = cur[1 - b]
+            b ^= 1
         else:
-            # b ^ cur == 1이 불가
             ans += '0'
-            cur = cur[b]
+
+        cur = cur[b]
 
     print(int(ans, 2))
 
