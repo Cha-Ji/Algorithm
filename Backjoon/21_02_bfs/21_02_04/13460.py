@@ -3,68 +3,30 @@ import sys
 from collections import deque
 input = sys.stdin.readline
 
-N, M = map(int, input().split())
 
-board = [list(input()[:-1])for _ in range(N)]
-
-for i in range(N):
-    for j in range(M):
-        if board[i][j] == 'B':
-            startB = [i, j]
-
-        elif board[i][j] == 'R':
-            startR = [i, j]
-
-# 이동 불가할 때 까지 이동
+def move(x, y, dx, dy):
+    while board[x + dx][y + dy] != "#" and board[x][y]:
+        x, y = x + dx, y + dy
+    return [x, y]
 
 
-def move(prev, d):
-    while True:
-        nextBoard = board[prev[0] + d[0]][prev[1] + d[1]]
-        if nextBoard == ("#" or "O"):
-            break
+def goBack(nextB, nextR, nowB, nowR, d):
+    # 겹치면
+    if nextB == nextR and board[nextB[0]][nextB[1]] != "O":
+        # 뒤에 있는 공
+        if nowB[0] * d[0] < nowR[0] * d[0] or nowB[1] * d[1] < nowR[1] * d[1]:
+            nextB[0] -= d[0]
+            nextB[1] -= d[1]
         else:
-            prev[0] += d[0]
-            prev[1] += d[1]
-
-    return prev
-
-# 이동 후 위치
-
-
-def next(prevB, prevR, d):
-    # 먼저 이동할 색, 나중에 이동한 색이 같은 곳으로 이동하면 한 칸 뒤로
-    bIsFirst = True
-    last = 0
-
-    # 동일 축이면 겹치지 않게 조심
-    for i in range(2):
-        if prevB[i] == prevR[i]:
-            #  앞 뒤 순서를 저장 true: b선 false: r선
-            bIsFirst = prevB[1-i] > prevR[1-i]
-            last = 1
-
-    if bIsFirst:
-        nextB = move(prevB, d)
-        nextR = move(prevR, d)
-        # 쫓아온 색깔은 한칸 뒤로
-        if nextB == nextR:
-            nextR = [nextR[0] - d[0]*last, nextR[1] - d[1]*last]
-
-    else:
-        nextR = move(prevB, d)
-        nextB = move(prevR, d)
-        # 쫓아온 색깔은 한칸 뒤로, 구멍 빠진건 뒤로 안감
-        if nextB == nextR and board[nextB[0]][nextB[1]] != "O":
-            nextB = [nextB[0] - d[0]*last, nextB[1] - d[1]*last]
-
+            nextR[0] -= d[0]
+            nextR[1] -= d[1]
     return nextB, nextR
 
 
 def bfs():
     dq = deque()
-    dq.append((startB, startR, 1))
-    vistedR = [[False] * M for _ in range(N)]
+    dq.append((startB, startR, 0))
+
     while dq:
         nowB, nowR, count = dq.popleft()
         if board[nowB[0]][nowB[1]] == "O":
@@ -73,9 +35,10 @@ def bfs():
             return count
 
         for d in (1, 0), (-1, 0), (0, 1), (0, -1):
-            nextB, nextR = next(nowB, nowR, d)
-            if not vistedR[nowR[0]][nowR[1]]:
-                vistedR[nowR[0]][nowR[1]] = True
+            nextB = move(nowB[0], nowB[1], d[0], d[1])
+            nextR = move(nowR[0], nowR[1], d[0], d[1])
+            nextB, nextR = goBack(nextB, nextR, nowB, nowR, d)
+            if nextB != nowB or nextR != nowR:
                 dq.append((nextB, nextR, count + 1))
 
         if count > 10:
@@ -83,4 +46,12 @@ def bfs():
     return -1
 
 
+N, M = map(int, input().split())
+board = [input()[:-1] for _ in range(N)]
+for i in range(N):
+    for j in range(M):
+        if board[i][j] == 'B':
+            startB = [i, j]
+        elif board[i][j] == 'R':
+            startR = [i, j]
 print(bfs())

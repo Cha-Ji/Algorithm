@@ -38,4 +38,3 @@ dfs(0, 0, 0)
 dfs(0, ans[0], 1)
 
 print(*ans)
-
