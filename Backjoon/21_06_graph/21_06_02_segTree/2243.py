@@ -17,7 +17,7 @@ def addCandy(favor, num, index):
 def delCandy(favor, num, index):
     if tree[index][1] < favor:
         tree[index][0] -= num
-        delCandy(favor, 1, index * 2 + 1) # FIXME
+        delCandy(favor, 1, index * 2 + 1)
     
 
 n = int(input())
